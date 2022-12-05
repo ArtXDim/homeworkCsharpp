@@ -4,10 +4,10 @@
 
 5 -> 2, 4
 8 -> 2, 4, 6, 8
-
 */
 
 //Решение
+
 Console.WriteLine("Input of value n");
 int n = Convert.ToInt32(Console.ReadLine() ??"");
 

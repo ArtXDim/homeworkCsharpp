@@ -6,3 +6,8 @@
 782 -> 8
 918 -> 1
 */
+
+Console.WriteLine("Input three-digit number");
+int numA = Convert.ToInt32(Console.ReadLine() ??"");
+
+Console.WriteLine((numA % % 10));
