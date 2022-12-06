@@ -11,6 +11,7 @@
 Console.WriteLine("Input of value n");
 int n = Convert.ToInt32(Console.ReadLine() ??"");
 
+Console.Write($"List of even numbers in between 0 .... {n}:");
 for (int i = (1); i <= n; i+=1 )
     if (i % 2 == 0 )
     {

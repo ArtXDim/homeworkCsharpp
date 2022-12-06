@@ -10,4 +10,4 @@
 Console.WriteLine("Input three-digit number");
 int numA = Convert.ToInt32(Console.ReadLine() ??"");
 
-Console.WriteLine((numA % % 10));
+Console.WriteLine((numA % 10));
