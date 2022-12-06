@@ -5,6 +5,7 @@
 7 -> нет
 */
 
+
 Console.WriteLine("Input number a=");
 int a = Convert.ToInt32(Console.ReadLine() ??"");
 
@@ -16,4 +17,3 @@ else
     {
         Console.WriteLine($"Value ({a}) is odd number.");
     }
-    
