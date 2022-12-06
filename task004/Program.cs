@@ -42,3 +42,4 @@ int numc = Convert.ToInt32(Console.ReadLine() ??"");
 
 int max3 = Math.Max(numa, Math.Max(numb,numc));
 Console.Write($"max = {max3}");
+
