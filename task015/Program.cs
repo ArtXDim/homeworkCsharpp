@@ -7,8 +7,11 @@
 1 -> нет
 */
 
-Console.WriteLine("Input number the day of week");
-int day = Convert.ToInt32(Console.ReadLine());
+
+//Решение №1
+
+/*Console.WriteLine("Input number the day of week");
+int day = Convert.ToInt32(Console.ReadLine() ??"");
 
 switch (day)    //метод switch конструкция
 {
@@ -24,24 +27,35 @@ switch (day)    //метод switch конструкция
     case 4 : Console.WriteLine("The fourth day in week is Thursday");
     break;
 
-    case 5 : Console.WriteLine("The five day in week is Friday");
+    case 5 : Console.WriteLine("The fifth day in week is Friday");
     break;
 
-    case 6 : Console.WriteLine("The six day in week is Saturday");
+    case 6 : Console.WriteLine("The sixth day in week is Saturday");
     break;
 
-    case 7 : Console.WriteLine("The seven day in week is Sunday");
+    case 7 : Console.WriteLine("The seventh day in week is Sunday");
     break;
 
     default:
     Console.WriteLine("In week we have only seven days. You introduced a wrong number!!!");
     break;
-
+}
 if (Math.Abs(day) <=5 )
     {
-    Console.WriteLine("This is weekday");
+    Console.Write("This is a weekday");
     }
-else (day == 6) || (day == 7)
+else if((day == 6) || (day == 7))
     {
-Console.WriteLine("This is a day off");
+    Console.WriteLine("This is a day off");
     }
+*/
+
+//Решение №2
+
+Console.WriteLine("Input number the day of week");
+int d = Convert.ToInt32(Console.ReadLine() ??"");
+
+if (Math.Abs(d) <= 5)
+{
+    Console.WriteLine("This is a weekday");
+}

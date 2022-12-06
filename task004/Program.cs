@@ -8,7 +8,7 @@
 
 
 //Решение №1 через IF
-/*
+
 Console.WriteLine("Input number a=");
 int a = Convert.ToInt32(Console.ReadLine() ??"");
 Console.WriteLine("Input number b=");
@@ -31,23 +31,14 @@ else
     Console.WriteLine($"max = {a}");
 }
 
-//Решение №2 Через двойную мат.функцию максимального Math.max
+//Решение №2 Через двойную Math.max
 
-Console.WriteLine("Input number numA=");
+Console.WriteLine("Input number A=");
 int numa = Convert.ToInt32(Console.ReadLine() ??"");
-Console.WriteLine("Input number numB=");
+Console.WriteLine("Input number B=");
 int numb = Convert.ToInt32(Console.ReadLine() ??"");
-Console.WriteLine("Input number numC=");
+Console.WriteLine("Input number C=");
 int numc = Convert.ToInt32(Console.ReadLine() ??"");
 
 int max3 = Math.Max(numa, Math.Max(numb,numc));
-Console.Write($"max = {max3}");*/
-
-//Решение №3 Массив
-
-int[] arr = {};
-Console.WriteLine(arr[0]);
-Console.WriteLine(arr[1]);
-Console.WriteLine(arr[2]);
-
-Console.WriteLine("max = " + arr.Max());
+Console.Write($"max = {max3}");
