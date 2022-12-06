@@ -50,10 +50,12 @@ else if((day == 6) || (day == 7))
     }
 */
 
+
 //Решение №2
 /*
 Console.WriteLine("Input number the day of week");
 int d = Convert.ToInt32(Console.ReadLine() ??"");
+
 
 if (Math.Abs(d) <= 5)
 {

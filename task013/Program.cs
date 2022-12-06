@@ -10,7 +10,9 @@
 Console.WriteLine("Input number ");
 int a = Convert.ToInt32(Console.ReadLine() ??"");
 
+
 if ((a=>100) && (n<999))
     Console.WriteLine();
 else
+
     */

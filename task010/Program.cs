@@ -7,6 +7,7 @@
 918 -> 1
 */
 
+
 Console.WriteLine("Input three-digit number");
 int numA = Convert.ToInt32(Console.ReadLine() ??"");
 
