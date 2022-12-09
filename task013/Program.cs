@@ -13,11 +13,10 @@ if ((a >= 100) && (a <= 999))
     Console.WriteLine($"The third digit is {a % 10} ");
 }
 else if (a < 100)
-    {
-        Console.WriteLine("!!! No third digit");
-    }
-
+{
+    Console.WriteLine("!!! No third digit");
+}
 else if (a > 999)
 {
-     Console.WriteLine("!!! This is not third-digit number");
+    Console.WriteLine("!!! This is not third-digit number");
 }
