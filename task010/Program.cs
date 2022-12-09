@@ -7,8 +7,18 @@
 918 -> 1
 */
 
+//Решение №1
 
+Console.Clear();
 Console.WriteLine("Input three-digit number");
 int numA = Convert.ToInt32(Console.ReadLine() ??"");
 
-Console.WriteLine((numA % 10));
+Console.WriteLine($"The third digit is {numA /10 % 10}"); 
+
+//Решение №2
+
+Console.WriteLine("Input three-digit number");
+int ThirdNum = Convert.ToInt32(Console.ReadLine() ??"");
+string StrThirdNum = (Convert.ToString(ThirdNum));
+
+Console.WriteLine($"The third digit is {StrThirdNum[1]}");
