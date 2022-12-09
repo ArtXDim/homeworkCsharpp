@@ -6,14 +6,18 @@
 
 
 Console.WriteLine("Input number ");
-int a = Convert.ToInt32(Console.ReadLine() ??"");
+int a = Convert.ToInt32(Console.ReadLine() ?? "");
 
-if ((a = 100) && (a < 999))
+if ((a >= 100) && (a <= 999))
 {
-    
+    Console.WriteLine($"The third digit is {a % 10} ");
 }
-    Console.WriteLine($"{i}");
-if else (a < 100)
+else if (a < 100)
     {
-        Console.WriteLine("No third digit");
+        Console.WriteLine("!!! No third digit");
     }
+
+else if (a > 999)
+{
+     Console.WriteLine("!!! This is not third-digit number");
+}
