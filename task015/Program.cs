@@ -1,16 +1,52 @@
-﻿// /* 
-// Задача 15:__
+﻿// Задача 15:__
 // Напишите программу, которая принимает на вход цифру, 
 // обозначающую день недели, и проверяет, является ли этот день выходным.
 // 6 -> да
 // 7 -> да
 // 1 -> нет
-// */
+
+//Решение 
+
+using System;
+
+int numberWeek(string message)
+//body function
+{
+    //bool isCorrect = false; // bool - принимает булиевая переменная true false. 
+    int result = 0;
+    while (true)
+    {
+        Console.WriteLine(message);
+        if (int.TryParse(Console.ReadLine(), out result) && result > 0 && result < 8)
+        {
+            return result; //break; //isCorrect = true;
+        }
+        else
+        {
+            Console.WriteLine("Wrong input. Please input correct number");
+        }
+    }
+
+}
+
+void numberWeek1(int NumWeek)
+{
+    if (Math.Abs(NumWeek) <= 5)
+    {
+        Console.Write("This is a weekday");
+    }
+    else if ((NumWeek == 6) || (NumWeek == 7))
+    {
+        Console.WriteLine("This is a day off");
+    }
+}
+int number = numberWeek("Input number the day of a week");
+numberWeek1(number);
 
 
-//Решение
 
-Console.WriteLine("Input number the day of week");
+/*
+Console.WriteLine("Input number the day of a week");
 int day = Convert.ToInt32(Console.ReadLine() ?? "");
 
 switch (day)    //метод switch конструкция
@@ -55,3 +91,4 @@ else if ((day == 6) || (day == 7))
 {
     Console.WriteLine("This is a day off");
 }
+*/
