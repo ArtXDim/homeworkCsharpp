@@ -7,20 +7,35 @@
 
 //Решение №1
 
-Console.Write("Input number ");
-string number = Console.ReadLine() ??"";
-
-void CheckingNumber(string number)
+int GetNumber(string message)
+//body function
 {
-    if (number[0] == number[4] || number[1] == number[3])
+    //bool isCorrect = false; // bool - принимает булиевая переменная true false. 
+    while (true)
     {
-        Console.WriteLine($"Your number: {number} - palindrom.");
+        Console.WriteLine(message);
+        string number = Console.ReadLine() ??"";
+        if (int.TryParse(number, out int result) && 9999 < result && result < 100000 )
+        //if (number.Length == 5 && int.TryParse(number, out int result) && result > 0)
+        {
+            return result; //break; //isCorrect = true;
+        }
+        else
+        {
+            Console.WriteLine("Wrong input. Please input correct number");
+        }
     }
-    else Console.WriteLine($"Your number: {number} - not palindrom.");
+
 }
 
-if (number!.Length == 5)
+bool IsPalindrom(string number)
 {
-    CheckingNumber(number);
+    return(number[0] == number[4] && number[1] == number[3]);
 }
-else Console.WriteLine("Input right number");
+
+int number = GetNumber("Input your fives-number value");
+if (IsPalindrom(number.ToString()))
+{
+    Console.WriteLine($"Your number: {number} - palindrom.");
+}
+    else Console.WriteLine($"Your number: {number} - not palindrom.");  
