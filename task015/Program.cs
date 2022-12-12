@@ -9,7 +9,7 @@
 
 using System;
 
-int numberWeek(string message)
+int NumberWeek(string message)
 //body function
 {
     //bool isCorrect = false; // bool - принимает булиевая переменная true false. 
@@ -40,7 +40,7 @@ void numberWeek1(int NumWeek)
         Console.WriteLine("This is a day off");
     }
 }
-int number = numberWeek("Input number the day of a week");
+int number = NumberWeek("Input number the day of a week");
 numberWeek1(number);
 
 
