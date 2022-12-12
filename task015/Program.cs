@@ -44,8 +44,8 @@ int number = numberWeek("Input number the day of a week");
 numberWeek1(number);
 
 
+// Решение №2
 
-/*
 Console.WriteLine("Input number the day of a week");
 int day = Convert.ToInt32(Console.ReadLine() ?? "");
 
@@ -91,4 +91,3 @@ else if ((day == 6) || (day == 7))
 {
     Console.WriteLine("This is a day off");
 }
-*/
