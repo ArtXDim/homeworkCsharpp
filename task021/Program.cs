@@ -4,9 +4,8 @@
 // A (7,-5, 0); B (1,-1,9) -> 11.53
 
 //Решение
-using System;
 
-Console.WriteLine("\n Задача №21");
+Console.WriteLine("\n Task #21");
 
 int x1 = Coordinate("x", "A");
 int y1 = Coordinate("y", "A");
@@ -17,7 +16,7 @@ int z2 = Coordinate("z", "B");
 
 int Coordinate(string coorName, string pointName)
 {
-    Console.WriteLine($"Введите координату {coorName} точки {pointName}: ");
+    Console.Write($"Input coordinate {coorName} point {pointName}: ");
     return Convert.ToInt16(Console.ReadLine());
 }
 
@@ -25,10 +24,10 @@ double DistXYZ(double x1, double x2,
                double y1, double y2,
                double z1, double z2)
 {
-    return Math.Sqrt(Math.Pow((x2 - x1), 2) +
-                     Math.Pow((y2 - y1), 2) +
-                     Math.Pow((z2 - z1), 2));
+    return Math.Sqrt(Math.Pow((x2-x1), 2) + Math.Pow((y2-y1), 2) + Math.Pow((z2-z1), 2));
 }
 
-double distXYZ = Math.Round(DistXYZ(x1, y1, x2, y2, z1, z2), 2);
-Console.WriteLine($"Расстояние между точками {distXYZ}");
+
+double distXYZ = Math.Round(DistXYZ(x1, x2, y1, y2, z1, z2), 2);
+Console.WriteLine($"Distance between point : {distXYZ}");
+
