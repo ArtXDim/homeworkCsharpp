@@ -6,33 +6,22 @@
 
 Console.WriteLine("Task #25");
 
-int GetNumber(string message)
+int Expone(int a, int b)
 {
-    //bool isCorrect = false; // bool - принимает булиевая переменная true false. 
-    while (true)
+    int result = 1;
+    for (int i = 1; i <= b; i++)   
     {
-        Console.WriteLine(message);
-        string number = Console.ReadLine() ?? "";
-        if (int.TryParse(number, out int result))
-        {
-            return result;
-        }
-        else
-        {
-            Console.WriteLine("Wrong input. Please input correct number");
-        }
+        result = result * a;
     }
+    return result;
 }
 
-Get
-
-Console.Write("Input number a=");
-int a = Convert.ToInt32(Console.ReadLine() ??"");
-Console.Write("Input number b=");
-int b = Convert.ToInt32(Console.ReadLine() ??"");
-int result = 0;
-
-Console.WriteLine($"{Math.Pow(a,b)}");
+Console.Write("Input number a:");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Input number b:");
+int b = Convert.ToInt32(Console.ReadLine());
+int Exponention = Expone(a, b);
+Console.WriteLine($"a^(b) = {Expone(a, b)}");
 
 
 
