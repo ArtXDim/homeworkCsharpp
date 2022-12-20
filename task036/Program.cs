@@ -8,18 +8,18 @@
 // Задать рандомный массив из 4 значений
 // найти сумму элементов на ечетных знпчениях
 
-Console.WriteLine("Введите размер массива  ");
+Console.WriteLine("Input lenght massive:  ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
 FillArrayRandomNumbers(numbers);
-Console.WriteLine("массив: ");
+Console.WriteLine("massive: ");
 PrintArray(numbers);
 int sum = 0;
 
 for (int z = 0; z < numbers.Length; z+=2)
     sum = sum + numbers[z];
 
-    Console.WriteLine($"всего {numbers.Length} чисел, сумма элементов cтоящих на нечётных позициях = {sum}");
+    Console.WriteLine($"{numbers.Length} number, summ elements stay on uneven position = {sum}");
 
 void FillArrayRandomNumbers(int[] numbers)
 {
