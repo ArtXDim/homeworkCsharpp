@@ -7,15 +7,15 @@
 // задать массив рандомных чисел
 // найти значение маскимального 
 // найти занчение минимального
-// найти разницу максимального и минимального 
+// найти разницу максимального и минимального
 
 Console.WriteLine("Task #38");
 
-Console.WriteLine("Введите размер массива  ");
+Console.WriteLine("Input lenght massive:  ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
 FillArrayRandomNumbers(numbers);
-Console.WriteLine("массив: ");
+Console.WriteLine("massive: ");
 PrintArray(numbers);
 int min = Int32.MaxValue;
 int max = Int32.MinValue;
