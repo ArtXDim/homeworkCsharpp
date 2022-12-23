@@ -11,6 +11,7 @@
 
 Console.WriteLine("Task #38");
 
+
 Console.WriteLine("Input lenght massive:  ");
 int size = Convert.ToInt32(Console.ReadLine());
 int[] numbers = new int[size];
