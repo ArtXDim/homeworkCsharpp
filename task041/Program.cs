@@ -4,14 +4,27 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-Console.WriteLine("Task #41");
+Console.Write("Input number with gap: ");
+int[] numbers = StringToNum(Console.ReadLine());
+PrintArray(numbers);
+int sum = 0;
+for (int i = 0; i < numbers.Length; i++)
+{
+    if (numbers[i] > 0)
+    {
+        sum++;
+    }
+}
+Console.WriteLine();
+Console.WriteLine($"Number the less of 0 = {sum}");
+
 
 int[] StringToNum(string input)
 {
     int count = 1;
     for (int i = 0; i < input.Length; i++)
     {
-        if (input[i] == ',')
+        if (input[i] == ' ')
         {
             count++;
         }
@@ -24,7 +37,7 @@ int[] StringToNum(string input)
     {
         string temp = "";
 
-        while (input [i] != ',')
+        while (input [i] != ' ')
         {
         if(i != input.Length - 1)
         {
