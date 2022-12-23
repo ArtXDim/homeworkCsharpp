@@ -6,6 +6,9 @@ __CTRL + SHIFT + P__ - перезагрузка OMNI
 
 Автоматическое форматирование кода в Visual Studio Code выполняется следующими комбинациями:
 
-Windows: Shift + Alt + F
-Mac: Shift ⇧ + Option ⌥ + F
-Ubuntu: Ctrl + Shift + I
+Windows: __Shift + Alt + F__
+
+Mac: __Shift ⇧ + Option ⌥ + F__
+
+Ubuntu: __Ctrl + Shift + I__
+__
