@@ -46,3 +46,26 @@ int ReadInt(string message)
     return Convert.ToInt32(Console.ReadLine());
 }
 */
+
+Console.WriteLine("Task # 47");
+//input correct nimber
+int GetNumber(string message)
+{
+    int result = 0;
+
+    while(true)
+    {
+        Console.WriteLine(message);
+
+        if(int.TryParse(Console.ReadLine(), out result))
+        {
+            break;
+        }
+        else
+        {
+            Console.WriteLine("This is not number. Please input number" ??"");
+        }
+    }
+
+    return result;
+}
