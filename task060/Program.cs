@@ -8,14 +8,13 @@
 // 27(0,0,1) 90(0,1,1)
 // 26(1,0,1) 55(1,1,1)
 
-Console.WriteLine("Task #60");
 
 Console.Clear();
-Console.WriteLine($"Задача 60: Сформируйте трёхмерный массив из неповторяющихся двузначных чисел. Напишите программу, которая будет построчно выводить массив, добавляя индексы каждого элемента.");
-Console.WriteLine($"\nВведите размер массива X x Y x Z:");
-int x = InputNumbers("Введите X: ");
-int y = InputNumbers("Введите Y: ");
-int z = InputNumbers("Введите Z: ");
+Console.WriteLine("Task #60");
+Console.WriteLine($"\nInput range of massive X x Y x Z:");
+int x = InputNumbers("Input X: ");
+int y = InputNumbers("Input Y: ");
+int z = InputNumbers("Input Z: ");
 Console.WriteLine($"");
 
 int[,,] array3D = new int[x, y, z];

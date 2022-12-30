@@ -1,12 +1,12 @@
-﻿// Вывести первые N строк треугольника Паскаля. 
+﻿// Задача №61*
+// Вывести первые N строк треугольника Паскаля. 
 // Сделать вывод в виде равнобедренного треугольника
 
-Console.WriteLine("Task061");
 
 Console.Clear();
-Console.WriteLine($"Дополнительная задача 61: Вывести первые N строк треугольника Паскаля. Сделать вывод в виде равнобедренного треугольника.");
+Console.WriteLine("Task061");
 
-int n = InputNumbers("Введите количество строк: ");
+int n = InputNumbers("Input amount of strings: ");
 
 double[,] pascalTriangle = new double[n + 1, 2 * n + 1];
 

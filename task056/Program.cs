@@ -9,16 +9,15 @@
 // 5 2 6 7
 
 // Программа считает сумму элементов в каждой строке и выдаёт номер
-//  строки с наименьшей суммой элементов: 1 строка
-
-Console.WriteLine("Task #56");
+// строки с наименьшей суммой элементов: 1 строка
 
 Console.Clear();
-Console.WriteLine($"Задача 56: Задайте прямоугольный двумерный массив. Напишите программу, которая будет находить строку с наименьшей суммой элементов.");
-Console.WriteLine($"\nВведите размер массива m x n и диапазон случайных значений:");
-int m = InputNumbers("Введите m: ");
-int n = InputNumbers("Введите n: ");
-int range = InputNumbers("Введите диапазон: от 1 до ");
+Console.WriteLine("Task #56");
+
+Console.WriteLine($"\nInput size of massiv m x n and range of random numbers:");
+int m = InputNumbers("Input m: ");
+int n = InputNumbers("Input n: ");
+int range = InputNumbers("Input range: from 1 to ");
 
 int[,] array = new int[m, n];
 CreateArray(array);
@@ -36,7 +35,7 @@ for (int i = 1; i < array.GetLength(0); i++)
   }
 }
 
-Console.WriteLine($"\n{minSumLine+1} - строкa с наименьшей суммой ({sumLine}) элементов ");
+Console.WriteLine($"\n{minSumLine+1} - String with a smallest amount ({sumLine}) of elements ");
 
 
 int SumLineElements(int[,] array, int i)

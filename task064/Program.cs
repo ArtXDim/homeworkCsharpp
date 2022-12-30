@@ -8,11 +8,11 @@
 
 Console.WriteLine("Task #64");
 
-int n = InputInt("Введите положительное число");
+int n = InputInt("Input positive number: ");
 int m = 1;
 if (n < 1)
 {
-    Console.WriteLine("Ввели не положительное число");
+    Console.WriteLine("Your number is not positive");
 }
 Console.WriteLine(NaturalNumber(n, m));
 

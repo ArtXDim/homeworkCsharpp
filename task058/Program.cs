@@ -8,74 +8,74 @@
 // 18 20
 // 15 18
 
-Console.WriteLine("Task #58");
 
 Console.Clear();
-Console.WriteLine($"Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.\n\nСразу зададим матрицу, которую можно перемножить, т.е. количество столбцов первой равно количеству строк второй");
-Console.WriteLine($"\nВведите размеры матриц и диапазон случайных значений:");
-int m = InputNumbers("Введите число строк 1-й матрицы: ");
-int n = InputNumbers("Введите число столбцов 1-й матрицы (и строк 2-й): ");
-int p = InputNumbers("Введите число столбцов 2-й матрицы: ");
-int range = InputNumbers("Введите диапазон случайных чисел: от 1 до ");
+Console.WriteLine("Task #58");
+
+Console.WriteLine($"\nInput size of matrix and range of random numbers:");
+int m = InputNumbers("Input number of string first matrix: ");
+int n = InputNumbers("Input number of columns first matrix (and strings second matrix): ");
+int p = InputNumbers("Input number of columns second matrix: ");
+int range = InputNumbers("Input range of random numbers: form 1 to ");
 
 int[,] firstMartrix = new int[m, n];
 CreateArray(firstMartrix);
-Console.WriteLine($"\nПервая матрица:");
+Console.WriteLine($"\nFirst matrix:");
 WriteArray(firstMartrix);
 
-int[,] secomdMartrix = new int[n, p];
-CreateArray(secomdMartrix);
-Console.WriteLine($"\nВторая матрица:");
-WriteArray(secomdMartrix);
+int[,] secondMartrix = new int[n, p];
+CreateArray(secondMartrix);
+Console.WriteLine($"\nSecond matrix:");
+WriteArray(secondMartrix);
 
-int[,] resultMatrix = new int[m,p];
+int[,] resultMatrix = new int[m, p];
 
-MultiplyMatrix(firstMartrix, secomdMartrix, resultMatrix);
-Console.WriteLine($"\nПроизведение первой и второй матриц:");
+MultiplyMatrix(firstMartrix, secondMartrix, resultMatrix);
+Console.WriteLine($"\nProduct first and second matrix:");
 WriteArray(resultMatrix);
 
-void MultiplyMatrix(int[,] firstMartrix, int[,] secomdMartrix, int[,] resultMatrix)
+void MultiplyMatrix(int[,] firstMartrix, int[,] secondMartrix, int[,] resultMatrix)
 {
-  for (int i = 0; i < resultMatrix.GetLength(0); i++)
-  {
-    for (int j = 0; j < resultMatrix.GetLength(1); j++)
+    for (int i = 0; i < resultMatrix.GetLength(0); i++)
     {
-      int sum = 0;
-      for (int k = 0; k < firstMartrix.GetLength(1); k++)
-      {
-        sum += firstMartrix[i,k] * secomdMartrix[k,j];
-      }
-      resultMatrix[i,j] = sum;
+        for (int j = 0; j < resultMatrix.GetLength(1); j++)
+        {
+            int sum = 0;
+            for (int k = 0; k < firstMartrix.GetLength(1); k++)
+            {
+                sum += firstMartrix[i, k] * secondMartrix[k, j];
+            }
+            resultMatrix[i, j] = sum;
+        }
     }
-  }
 }
 
 int InputNumbers(string input)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.Write(input);
+    int output = Convert.ToInt32(Console.ReadLine());
+    return output;
 }
 
 void CreateArray(int[,] array)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-      array[i, j] = new Random().Next(range);
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = new Random().Next(range);
+        }
     }
-  }
 }
 
-void WriteArray (int[,] array)
+void WriteArray(int[,] array)
 {
-  for (int i = 0; i < array.GetLength(0); i++)
-  {
-    for (int j = 0; j < array.GetLength(1); j++)
+    for (int i = 0; i < array.GetLength(0); i++)
     {
-      Console.Write(array[i,j] + " ");
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
     }
-    Console.WriteLine();
-  }
 }

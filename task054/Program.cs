@@ -12,16 +12,16 @@
 
 Console.Clear();
 Console.WriteLine("Task #54");
-Console.WriteLine($"\nВведите размер массива m x n и диапазон случайных значений:");
-int m = InputNumbers("Введите m: ");
-int n = InputNumbers("Введите n: ");
-int range = InputNumbers("Введите диапазон: от 1 до ");
+Console.WriteLine($"\nInput size of massiv m x n and range of random numbers:");
+int m = InputNumbers("Input m: ");
+int n = InputNumbers("Input n: ");
+int range = InputNumbers("Input range: from 1 to ");
 
 int[,] array = new int[m, n];
 CreateArray(array);
 WriteArray(array);
 
-Console.WriteLine($"\nОтсортированный массив: ");
+Console.WriteLine($"\nSorted massiv: ");
 OrderArrayLines(array);
 WriteArray(array);
 

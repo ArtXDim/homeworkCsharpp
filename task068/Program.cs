@@ -5,11 +5,12 @@
 // m = 2, n = 3 -> A(m,n) = 9
 // m = 3, n = 2 -> A(m,n) = 29
 
+Console.Clear();
 Console.WriteLine("Task #68");
 
-Console.WriteLine("Введите два положительных числа: M и N.");
-int m = InputInt("Введите M: ");
-int n = InputInt("Введите N: ");
+Console.WriteLine("\nInput two positive numbers: M & N");
+int m = InputInt("Input M: ");
+int n = InputInt("Input N: ");
 Console.WriteLine($"A({m}, {n}) = {Akkerman(m, n)}");
 
 int InputInt(string output)
