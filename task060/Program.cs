@@ -11,6 +11,7 @@
 
 Console.Clear();
 Console.WriteLine("Task #60");
+
 Console.WriteLine($"\nInput range of massive X x Y x Z:");
 int x = InputNumbers("Input X: ");
 int y = InputNumbers("Input Y: ");

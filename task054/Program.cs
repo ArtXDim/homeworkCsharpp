@@ -12,16 +12,16 @@
 
 Console.Clear();
 Console.WriteLine("Task #54");
-Console.WriteLine($"\nInput size of massiv m x n and range of random numbers:");
+Console.WriteLine($"\nInput size of massive m x n and range of random numbers:");
 int m = InputNumbers("Input m: ");
 int n = InputNumbers("Input n: ");
-int range = InputNumbers("Input range: from 1 to ");
+int range = InputNumbers("Input range: from 1 to ....");
 
 int[,] array = new int[m, n];
 CreateArray(array);
 WriteArray(array);
 
-Console.WriteLine($"\nSorted massiv: ");
+Console.WriteLine($"\nSorted massive: ");
 OrderArrayLines(array);
 WriteArray(array);
 
