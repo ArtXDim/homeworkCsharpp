@@ -10,9 +10,8 @@
 // 9 5 3 2
 // 8 4 4 2
 
-Console.WriteLine("Task #54");
-
 Console.Clear();
+Console.WriteLine("Task #54");
 Console.WriteLine($"\nВведите размер массива m x n и диапазон случайных значений:");
 int m = InputNumbers("Введите m: ");
 int n = InputNumbers("Введите n: ");

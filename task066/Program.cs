@@ -14,7 +14,7 @@ Console.WriteLine($"Сумма элементов от {m} до {n} = {CountNatu
 int InputInt(string output)
 {
     Console.Write(output);
-    return int.Parse(Console.ReadLine());
+    return int.Parse(Console.ReadLine()??"");
 }
 
 int CountNaturalSum(int m, int n)

@@ -15,7 +15,7 @@ Console.WriteLine($"A({m}, {n}) = {Akkerman(m, n)}");
 int InputInt(string output)
 {
     Console.Write(output);
-    return int.Parse(Console.ReadLine());
+    return int.Parse(Console.ReadLine()??"");
 }
 
 int Akkerman(int m, int n)
